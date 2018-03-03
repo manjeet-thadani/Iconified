@@ -114,7 +114,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="github/dncjdscnsj" />
+                        android:text="https://github.com/manjeet-thadani/Iconified" />
 
                     <View
                         android:layout_width="match_parent"
