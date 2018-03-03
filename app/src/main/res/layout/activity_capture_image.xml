@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/activity_capture_image_cameraview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        app:ckCropOutput="false"
+        app:ckDoubleTapToToggleFacing="true"
+        app:ckFacing="back"
+        app:ckFocus="tapWithMarker"
+        app:ckJpegQuality="100"
+        app:ckMethod="standard"
+        app:ckPinchToZoom="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/activity_capture_image_capture_image_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/fab_margin"
+        android:scaleType="center"
+        android:src="@drawable/camera"
+        android:tint="@color/white"
+        app:fabSize="normal" />
+
+</android.support.design.widget.CoordinatorLayout>

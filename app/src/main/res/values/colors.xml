@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1e88e5</color>
+    <color name="colorPrimaryDark">#005cb2</color>
+    <color name="colorPrimaryLight">#6ab7ff</color>
+    <color name="colorAccent">#1e88e5</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="colorBackground">#FFFFFF</color>
+
+    <color name="divider">#BDBDBD</color>
+
+    <color name="pivot_text">#fff7000e</color>
+
+    <color name="progress_gray">#FFD8D8D8</color>
+    <color name="progress_gray_dark">#FF383838</color>
+    <color name="default_blue_light">#ff33b5e5</color>
+
+    <color name="black">#000</color>
+    <color name="red">#ffe2231a</color>
+    <color name="dark_green">#00b774</color>
+    <color name="dark_red">#ff510209</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#fafafa</color>
+    <color name="light_blue">#ff33b5e5</color>
+    <color name="dark_blue">#0288D1</color>
+    <color name="transperent">#00000000</color>
+    <color name="indigo">#7C4DFF</color>
+    <color name="gray">#BDBDBD</color>
+
+    <color name="button_gradient_start_color">#876FE4</color>
+    <color name="button_gradient_center_color">#9292F2</color>
+    <color name="button_gradient_end_color">#99A8FC</color>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_title_textsize">20dp</dimen>
+    <dimen name="layout_padding">16dp</dimen>
+    <dimen name="layout_margin">16dp</dimen>
+    <dimen name="snackbar_textsize">12dp</dimen>
+
+    <!-- CardView -->
+    <dimen name="card_view_corner_radius">4dp</dimen>
+    <dimen name="card_view_card_elevation">4dp</dimen>
+
+    <!-- IntroSlider -->
+    <dimen name="intro_slide_textview_margintop">16dp</dimen>
+    <dimen name="intro_slide_textview_marginleft">16dp</dimen>
+    <dimen name="intro_slide_textview_marginright">16dp</dimen>
+    <dimen name="intro_slide_textview_textsize">18dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Settings Activity-->
+    <dimen name="setting_activity_layout_main_layout_padding">16dp</dimen>
+    <dimen name="setting_activity_layout_margintop_small">16dp</dimen>
+    <dimen name="setting_activity_layout_margintop_large">16dp</dimen>
+    <dimen name="setting_activity_textview_textsize">16dp</dimen>
+    <dimen name="setting_activity_divider_height">1dp</dimen>
+
+
+
+</resources>
