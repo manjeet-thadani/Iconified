@@ -1,10 +1,10 @@
 package com.genius.iconified;
 
-import android.app.ProgressDialog;
 import android.graphics.Bitmap;
 import android.graphics.Typeface;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -55,7 +55,21 @@ public class WebViewActivity extends AppCompatActivity {
 
         searchQuery = getIntent().getStringExtra("query");
 
-        loadURL();
+        if (isInternetOn())
+            loadURL();
+        else {
+            Toast.makeText(getApplicationContext(), "Unable To Connect To Internet", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    boolean isInternetOn() {
+        ConnectivityManager conn = (ConnectivityManager) getSystemService(getBaseContext().CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = conn.getActiveNetworkInfo();
+
+        if (netInfo != null && netInfo.isConnected())
+            return true;
+        else
+            return false;
     }
 
     private void loadURL() {
@@ -63,23 +77,23 @@ public class WebViewActivity extends AppCompatActivity {
                 searchQuery.replaceAll(" ", "+") +
                 "&btnI";
 
-        webView.setWebViewClient(new WebViewClient(){
+        webView.setWebViewClient(new WebViewClient() {
             @Override
-            public void onPageStarted(WebView view, String url, Bitmap favicon){
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 mProgressBar.setVisibility(View.VISIBLE);
             }
 
             @Override
-            public void onPageFinished(WebView view, String url){
+            public void onPageFinished(WebView view, String url) {
             }
 
         });
 
-        webView.setWebChromeClient(new WebChromeClient(){
+        webView.setWebChromeClient(new WebChromeClient() {
 
-            public void onProgressChanged(WebView view, int newProgress){
+            public void onProgressChanged(WebView view, int newProgress) {
                 mProgressBar.setProgress(newProgress);
-                if(newProgress == 100){
+                if (newProgress == 100) {
                     mProgressBar.setVisibility(View.GONE);
                 }
             }
